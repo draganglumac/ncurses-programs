@@ -40,7 +40,8 @@ int main()
 
 	/* Print the menu for the first time */
 	menu_win = newwin(HEIGHT, WIDTH, starty, startx);
-	print_menu(menu_win, 1);
+  keypad(menu_win, TRUE);
+  print_menu(menu_win, 1);
 	/* Get all the mouse events */
 	mousemask(ALL_MOUSE_EVENTS, NULL);
 	
