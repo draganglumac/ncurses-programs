@@ -59,7 +59,7 @@ int main()
         {	report_choice(event.x + 1, event.y + 1, &choice);
           if(choice == -1) //Exit chosen
             goto end;
-          mvprintw(22, 1, "Mouse interval: %d Choice made is : %d String Chosen is \"%10s\"", interval, choice, choices[choice - 1]);
+          mvprintw(22, 1, "Choice made is : %d String Chosen is \"%10s\"", choice, choices[choice - 1]);
           refresh(); 
         }
       }
